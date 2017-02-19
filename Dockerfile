@@ -8,6 +8,7 @@ RUN apt-get install -q -y unzip
 
 # JDK
 RUN apt-get install -q -y openjdk-7-jre-headless && apt-get clean
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 # Jenkins
 ADD http://mirrors.jenkins-ci.org/war/1.560/jenkins.war /opt/jenkins.war
